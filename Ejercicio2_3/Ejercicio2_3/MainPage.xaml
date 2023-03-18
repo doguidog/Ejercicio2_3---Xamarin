@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio2_3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Marvin Martinez - Audio" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Image Source="voz.png" Margin="30,30,30,30"/>
+        <Label Text="Descripción" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry Placeholder="Escriba una descripción" Margin="30,0,30,0" x:Name="txtdescripcion"/>
+        <Grid Margin="20,0,20,0">
+            <Button Text="Grabar Audio" Grid.Column="0" x:Name="btnGrabar" Clicked="btnGrabar_Clicked"/>
+            <Button Text="Detener Audio" Grid.Column="1" x:Name="btnDetener" Clicked="btnDetener_Clicked"  IsEnabled="False"/>
+            <Button Text="Listar Audios" Grid.Row="1" Grid.ColumnSpan="2" x:Name="btnlistarAudio" Clicked="btnlistarAudio_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
